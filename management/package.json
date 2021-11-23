@@ -1,0 +1,23 @@
+{
+  "name": "management",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "client": "cd client && yarn start",
+    "server": "nodemon server.js",
+    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
+  },
+  "dependencies": {
+    "@material-ui/icons": "^4.11.2",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "http-proxy-middleware": "^2.0.1",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.12"
+  },
+  "devDependencies": {
+    "@material-ui/codemod": "^4.5.0",
+    "concurrently": "6.2.0"
+  }
+}
